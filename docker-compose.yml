@@ -1,0 +1,14 @@
+# docker-compose.yml
+# ----------------------------------------------------------------------------
+# Composes Docker containers and volumes to a runnable Spring Boot application
+# ----------------------------------------------------------------------------
+#
+---
+version: '3'
+
+services:
+
+  backend:
+    image: cnj-hello-backend-nodejs:latest
+    ports:
+      - "18080:3000"

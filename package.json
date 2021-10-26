@@ -1,0 +1,24 @@
+{
+  "name": "hello_world_npm",
+  "version": "1.0.0",
+  "description": "Hello-World NPM",
+  "main": "src/index.js",
+  "scripts": {
+    "start:express": "node ./src/index.js",
+    "start_dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudbirdsmsg/hello_world_npm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cloudbirdsmsg/hello_world_npm/issues"
+  },
+  "homepage": "https://github.com/cloudbirdsmsg/hello_world_npm#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.14"
+  }
+}
