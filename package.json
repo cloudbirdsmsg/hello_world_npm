@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start:express": "node ./src/index.js",
+    "start": "nodemon",
     "start_dev": "nodemon"
   },
   "repository": {

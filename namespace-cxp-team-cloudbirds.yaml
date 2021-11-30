@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: "2021-11-26T10:20:15Z"
+  labels:
+    app.kubernetes.io/component: namespace
+    app.kubernetes.io/managed-by: Terraform
+    app.kubernetes.io/name: cxp-team-cloudbirds
+    app.kubernetes.io/part-of: cxppltf
+    istio-injection: disabled
+  name: cxp-team-cloudbirds
+  resourceVersion: "998695"
+  uid: e7657d27-b273-40a3-8147-de23612f9d86
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active

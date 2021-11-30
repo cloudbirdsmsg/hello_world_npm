@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cnj-hello-backend-nodejs-ingress
+  namespace: cxp-team-cloudbirds
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$2 ##was 
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: cxp.k8s.azure.msgoat.eu
+      http:
+        paths:
+          - path: /cxp-team-cloudbirds-nodejs
+            pathType: Prefix
+            backend:
+              service:
+                name: cnj-hello-backend-nodejs-service
+                port:
+                  number: 80
